@@ -1,0 +1,41 @@
+# 依赖与构建产物
+node_modules/
+dist/
+unpackage/
+target/
+*.class
+*.jar
+*.war
+
+# 编辑器与IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+
+# 日志与临时文件
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地环境与密钥
+.env
+.env.local
+*.local
+application-local.yml
+application-dev.yml
+
+# 上传文件与缓存
+uploads/
+temp/

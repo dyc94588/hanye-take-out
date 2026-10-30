@@ -1,0 +1,27 @@
+# 开发环境配置模板
+# 使用方式：复制本文件为 application-dev.yml，填入本地真实值后再启动项目
+# application-dev.yml 已被 .gitignore 忽略，不会提交到仓库，请勿把真实密码写进本模板
+
+hanye:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hanye_take_out
+    username: your_mysql_username
+    password: your_mysql_password
+  redis:
+    host: localhost
+    port: 6379
+    password: your_redis_password
+    database: 1
+  wechat:
+    # 微信小程序 / 公众号后台获取，切勿提交真实值
+    appid: your_wechat_appid
+    secret: your_wechat_secret
+    # 以下为微信支付相关参数，需企业商户号，个人开发者可留空
+    mchid: your_mch_id
+    mchSerialNo: your_cert_serial_no
+    privateKeyFilePath: /path/to/apiclient_key.pem
+    apiV3Key: your_api_v3_key
+    weChatPayCertFilePath: /path/to/wechatpay_cert.pem
+    notifyUrl: https://your-domain/notify/paySuccess
+    refundNotifyUrl: https://your-domain/notify/refundSuccess
